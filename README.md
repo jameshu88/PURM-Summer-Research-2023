@@ -19,8 +19,6 @@ Penn PURM Taiko is a JavaScript-based rhythm game inspired by Taiko no Tatsujin.
 
 Penn PURM Timbre is another JavaScript game that measures players' abilities to differentiate between instrument timbres. It provides a fun and engaging way to compare players' ability to differentiate vocal timbres.
 
-(Add screenshots here)
-
 ## Penn PURM VocalSense
 
 <p align="center">
@@ -49,8 +47,6 @@ This project uses next/font to automatically optimize and load Inter, a custom G
 ### Learn More
 [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
 [Learn Next.js](https://nextjs.org/learn) - An interactive Next.js tutorial.
-
-(Add screenshots here)
 
 ###Deploy on Vercel
 The easiest way to deploy a Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
