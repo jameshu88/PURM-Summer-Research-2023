@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fetched-data {
+     font-family: 'Mukta Mahee', sans-serif;
+}
+
+.fetched-data h1 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.results {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    background: #3c3c3d;
+    padding-top: 40px;
+}
+
+.names {
+    width: 20%;
+}
+
+.name {
+    margin-left: 25px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 20px;
+    line-height: 33px;
+    width: 90px;
+    height: 34px;
+    cursor: pointer;
+    user-select: none;
+    background: #595959;
+    color: white;
+    overflow: hidden;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.span {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border: 17px solid #3c3c3d;
+    border-left: 19px solid #595959;
+    z-index: 2;
+}
+
+.name-active {
+    background: #71ee5a;
+    color: #3c3c3d;
+}
+
+.span-active {
+    border: 17px solid #3c3c3d;
+    border-left: 19px solid #71ee5a;
+}
+
+.values {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.value {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.value p { 
+    word-wrap: break-word;
+    background: white;
+    padding: 10px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    
+}
+
+
+

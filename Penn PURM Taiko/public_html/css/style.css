@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.canvas{
+    width: 500px;
+    height: 200px;
+    max-width: 1000px;
+    max-height: 500px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.transition {
+    transition: 1.3s;
+    width: 700px;
+    height: 350px;
+}
+
+.menu {
+    font-family: 'Mukta Mahee', sans-serif;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    color: white;
+
+}
+
+.dark-background-start {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0000004a;
+    box-shadow: 0px 0px 4px 2px #ff131330;
+}
+
+.wrap-menu-content {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.wrap-menu-content form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.play {
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.play h3 {
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.instructions { 
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+    transition: .65s;
+}
+
+
+.menu img {
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+
+.gameplay-details {
+    font-size: 16px;
+    box-sizing: border-box;
+    max-width: 380px;
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.add-name {
+    padding: 5px 0px;
+    border-radius: 10px;
+    border: 1px solid #74b43d;
+    outline: none;
+    font-family: 'Mukta Mahee';
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.1s;
+    left: 0;
+    position: relative;
+}
+
+#input-btn {
+    padding: 6px 13px;
+    border-radius: 10px;
+    border: 1px solid #74b43d;
+    color: #74b43d;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.end-game {
+    width: 700px;
+    height: 350px;
+    top: 45%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'Mukta Mahee', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.dark-background-end {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #0000004a;
+    box-shadow: 0px 0px 4px 2px #ff131330;
+    z-index: -1;
+}
+
+.end-game p {
+    padding: 20px 220px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.end-game h3 {
+    letter-spacing: 0.5px;
+}
+
+.pop-up {
+    display: none;
+    background: #f1ab04;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: absolute;
+    z-index: 9999999;
+    padding: 6px 20px;
+    border-radius: 4px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .canvas {
+    
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .canvas {
+    
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .canvas {
+
+    }
+}

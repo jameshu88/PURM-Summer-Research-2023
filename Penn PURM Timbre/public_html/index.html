@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Musical Proficiency Game</title>
+</head>
+<body>
+    <div class="start-screen">
+        <div class="start-background"></div>
+        <div class="start-head"></div>
+        <div class="start-head head-2"></div>
+        <div class="start button" id="start-button">Start</div>
+        <div class="window" id="name-window">
+            <div class="window-head">Enter your Name</div>
+            <div class="window-body"><input type="text" id="name"></div>
+            <div class="window-foot"><div class="button" id="enter-username">Confirm</div></div>
+        </div>
+    </div>
+    <div class="game-screen">
+        <div class="start-background"></div>
+        <div class="test-count">1/20</div>
+        <div class="time-count">00:00</div>
+        <div class="elephant-1"></div>
+        <div class="elephant-2"></div>
+        <div class="button start" id="play-button">Play Music</div>
+        <div class="answer-holder">
+            <div class="answer-text">Are the two sounds the same?</div>
+            <div class="button-holder">
+                <div class="button answer" id="same">Same</div>
+                <div class="button answer" id="not-same">Not Same</div>
+            </div>
+        </div>
+        <div class="button-blocker"></div>
+    </div>
+    <div class="final-screen">
+        <div class="start-background"></div>
+        <div class="window">
+            <div class="window-head">Final Score</div>
+            <div class="window-body">
+                <div class="round-holder">
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                    <div class="round wrong"></div>
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                    <div class="round wrong"></div>
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                    <div class="round wrong"></div>
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                    <div class="round correct"></div>
+                </div>
+                <div class="result-final">20/20</div>
+            </div>
+            <div class="window-foot">
+                <div class="button" id="restart">Restart</div>
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/socket.io/client-dist/socket.io.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

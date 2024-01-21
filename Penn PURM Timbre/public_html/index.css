@@ -1,0 +1,308 @@
+body{
+    overflow:hidden;
+    user-select:none;
+    font-family:"Arial";
+    font-size:min(2vh,2vw);
+    color:rgb(255,255,255);
+    text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+}
+.start-screen{
+    position:absolute;
+    height:100%;
+    width:100%;
+    left:0px;
+    top:0px;
+}
+.game-screen{
+    position:absolute;
+    display:none;
+    height:100%;
+    width:100%;
+    left:0px;
+    top:0px;
+}
+.final-screen{
+    position:absolute;
+    display:none;
+    height:100%;
+    width:100%;
+    left:0px;
+    top:0px;
+}
+.start-background{
+    background-image:url("./Images/background.jpg");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:absolute;
+
+    filter:hue-rotate(180deg);
+    transform:translate(-50%,-50%);
+    height:max(150vh,150vw);
+    width:max(150vh,150vw);
+    left:50%;
+    top:50%;
+    animation:spin linear infinite 15s;
+}
+.start-head{
+    background-image:url("./Images/elephant1\ singing\ head.png");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:absolute;
+
+    transform:translate(-50%,-50%) rotate(25deg);
+    height:min(50vh,50vw);
+    width:min(50vh,50vw);
+    left:25%;
+    top:25%;
+    animation:head-bob-1 ease-in-out infinite 1.5s;
+}
+.head-2{
+    background-image:url("./Images/elephant2\ singing\ head.png");
+    transform:scaleX(-1);
+    left:75%;
+    top:75%;
+
+    animation:head-bob-2 ease-in-out infinite 1.5s;
+}
+.button{
+    background-color:rgb(192,223,255); 
+    border:min(0.5vh,0.5vw) solid rgb(91,175,255);
+    transform:translateY(0px);
+    width:min(15vh,15vw);
+    height:min(3vh,3vw);
+
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    display:flex;
+
+    border-radius:min(2vh,2vw);
+}
+.button:hover{
+    transform:translateY(-1px);
+}
+.button:active{
+    transform:translateY(1px);
+}
+.start{
+    box-shadow:0px 0px min(1vh,1vw) rgb(255,255,255);
+    background-color:rgb(107,149,210);
+    transform:translate(-50%,-50%);
+    font-size:min(3vh,3vw);
+    width:min(20vh,20vw);
+    height:min(5vh,5vw);
+    position:absolute;
+    left:50%;
+    top:50%;
+
+    border:min(0.5vh,0.5vw) solid rgb(255,255,255);
+}
+.start:hover{
+    transform:translate(-50%,calc(-50% - 1px));
+}
+.start:active{
+    transform:translate(-50%,calc(-50% + 1px));
+}
+#name-window{
+    display:none;
+}
+
+
+.window{
+    box-shadow:0px 0px min(1vh,1vw) rgba(0,0,0,0.5);
+    border:min(1vh,1vw) solid rgb(91,175,255);
+    background-color:rgb(192,223,255); 
+    transform:translate(-50%,-50%); 
+    border-radius:min(2vh,2vw);
+    padding:min(1vh,1vw);
+    position:absolute;
+    left:50%;
+    top:50%;
+}
+.window-head{
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    display:flex;
+
+    padding-bottom:min(2vh,2vw);
+    font-size:min(4vh,4vw);
+    height:min(5vh,5vw);
+    width:100%;
+}
+.window-body{
+    width:100%;
+}
+.window-foot{
+    padding-top:min(2vh,2vw);
+    height:min(5vh,5vw);
+    width:100%;
+
+    justify-content:center;
+    align-items:center;
+    display:flex;
+}
+input[type=text]{
+    border:min(0.5vh,0.5vw) solid rgb(91,175,255);
+    border-radius:min(2vh,2vw);
+    transform:translate(-50%);
+    font-size:min(2vh,2vw);
+    font-family:"Arial";
+    margin-left:50%;
+    width:90%;
+}
+
+
+.test-count{
+    transform:translate(-50%);
+    font-size:min(8vh,8vw);
+    position:absolute; 
+    font-weight:bold;
+    left:50%;
+}
+.time-count{
+    font-size:min(8vh,8vw);
+    position:absolute; 
+    font-weight:bold;
+    right:1%;
+}
+.elephant-1{
+    background-image:url("./Images/elephant1\ idle.png");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:100%;
+
+    transform:translateY(-50%);
+    position:absolute;
+    aspect-ratio:1;
+    height:50%;
+    left:10%;
+    top:40%;
+
+    animation:bounce1 linear infinite 2s;
+}
+.elephant-2{
+    background-image:url("./Images/elephant2\ idle.png");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:100%;
+
+    transform:translateY(-50%);
+    position:absolute;
+    aspect-ratio:1;
+    height:50%;
+    right:10%;
+    top:40%;
+
+    animation:bounce2 linear infinite 2s;
+}
+.answer-holder{
+    background-color:rgb(192,223,255); 
+    border:min(1vh,1vw) solid rgb(91,175,255);
+    border-radius:min(2vh,2vw);
+    transform:translate(-50%);
+    height:min(20vh,20vw);
+    position:absolute;
+    display:none;
+    bottom:5%;
+    width:50%;
+    left:50%;
+}
+.answer-text{
+    font-size:min(4vh,4vw);
+    height:25%;
+    width:100%;
+
+    justify-content:center;
+    align-items:center;
+    display:flex;
+}
+.button-holder{
+    height:75%;
+    width:100%;
+
+    justify-content:center;
+    align-items:center;
+    display:flex;
+}
+.answer{
+    height:min(10vh,10vw);
+    width:min(25vh,25vw);
+    margin:min(1vh,1vw);
+
+    font-size:min(5vh,5vw);
+}
+.button-blocker{
+    transform:translate(-50%,-50%);
+    height:min(10vh,10vw);
+    width:min(25vh,25vw);
+    position:absolute;
+    display:none;
+    left:50%;
+    top:50%;
+}
+
+.round-holder{
+    justify-content:center;
+    align-items:center;
+    display:flex;
+}
+.round{
+    border:min(0.5vh,0.5vh) solid rgb(91,175,255);
+    margin:min(0.25vh,0.25vw);
+    border-radius:100%;
+    height:min(3vh,3vw);
+    width:min(3vh,3vw);
+}
+.correct{
+    background-color:rgb(0,220,0);
+}
+.wrong{
+    background-color:rgb(220,0,0);
+}
+.result-final{
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    display:flex;
+
+    margin-top:min(2vh,2vw);
+    font-size:min(10vh,10vw);
+    width:100%;
+}
+
+
+@keyframes spin{
+    from {transform:translate(-50%,-50%) rotate(0deg);}
+    to {transform:translate(-50%,-50%) rotate(360deg);}
+}
+@keyframes head-bob-1{
+    0% {transform:translate(-50%,-50%) rotate(25deg);}
+    50%{transform:translate(-50%,-50%) rotate(-25deg);}
+    100% {transform:translate(-50%,-50%) rotate(25deg);}
+}
+@keyframes head-bob-2{
+    0% {transform:translate(-50%,-50%) rotate(25deg) scaleX(-1);}
+    50%{transform:translate(-50%,-50%) rotate(-25deg)scaleX(-1);}
+    100% {transform:translate(-50%,-50%) rotate(25deg) scaleX(-1);}
+}
+@keyframes bounce1{
+    0% {transform:translateY(-55%);}
+    50% {transform:translateY(-45%);}
+    100% {transform:translateY(-55%);}
+}
+@keyframes bounce2{
+    0% {transform:translateY(-45%);}
+    50% {transform:translateY(-55%);}
+    100% {transform:translateY(-45%);}
+}
+@keyframes fadeOut{
+    from {opacity:1;}
+    to {opacity:0;}
+}
+@keyframes fadeIn{
+    from {opacity:0;}
+    to {opacity:1;}
+}
