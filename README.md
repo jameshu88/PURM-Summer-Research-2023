@@ -4,15 +4,24 @@ Welcome to the repository for three in-game websites that I developed as part of
 
 ## Penn PURM Taiko
 
+<img width="700" alt="Screen Shot 2023-08-26 at 3 29 08 PM" src="https://github.com/jameshu88/PURM-Summer-Research-2023/assets/153482468/db2cc4c6-6c73-49f0-bfb4-08e8b7378e05">
+
 Penn PURM Taiko is a JavaScript-based rhythm game inspired by Taiko no Tatsujin. It measures users' rhythmic perception to correlate with their levels of linguistic and music education. The app utilizes JavaScript and stores data in a MySQL database.
 
 
 ## Penn PURM Timbre
+
+<img width="1442" alt="Screen Shot 2024-01-21 at 4 58 10 PM" src="https://github.com/jameshu88/PURM-Summer-Research-2023/assets/153482468/e8bdd6c2-7d2b-4369-b040-dc568097be21">
+
+
 Penn PURM Timbre is another JavaScript game that measures players' abilities to differentiate between instrument timbres. It provides a fun and engaging way to compare players' ability to differentiate vocal timbres.
 
 (Add screenshots here)
 
 ## Penn PURM VocalSense
+
+<img width="1407" alt="Screen Shot 2024-01-21 at 4 55 57 PM" src="https://github.com/jameshu88/PURM-Summer-Research-2023/assets/153482468/0f64b2b7-ee0c-4df1-878e-d8a1cdec5e6f">
+
 Penn PURM VocalSense is a Next.js project bootstrapped with create-next-app. This game measures players' abilities to differentiate between the intonations of two speakers by asking which elephant has spoken in a higher tone.
 
 ### Getting Started
