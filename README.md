@@ -1,6 +1,6 @@
 # Penn PURM Linguistics Research Projects
 
-Welcome to the repository for three in-game websites that I developed as part of linguistics research under the Penn Undergraduate Research Mentorship (PURM) scholarship at the Penn Phonetics Lab in the University of Pennsylvania.
+In the summer of 2023, I used Javascript, MongoDB, and HTML to design 3 online musicolinguistic games for the Univeristy of Pennsylvania's phonetics laboratory, collecting data from over 200 runs of my software in the lab, to analyze how influence of language acquisition on rhythm and pitch. Here is some of the code for my website, which I have since archived upon completion of research. (Findings presented (2023, April 10). Music, language, and phonetic cognition in children. Annual CURF Research Exposition, University of Pennsylvania, Philadelphia, PA, United States.)
 
 ## Penn PURM Taiko
 
